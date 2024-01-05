@@ -40,5 +40,6 @@ jobs:
         push: true
         platforms: linux/amd64,linux/arm64
         tags: |
-          ${{ env.REGISTRY_NAME }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
-          ${{ env.REGISTRY_NAME }}/${{ env.IMAGE_NAME }}:latest
+          harbor.haijin666.top/${{ env.REGISTRY_NAME }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
+          harbor.haijin666.top/${{ env.REGISTRY_NAME }}/${{ env.IMAGE_NAME }}:latest
+
