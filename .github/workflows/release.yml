@@ -6,10 +6,8 @@ on:
     - "v*"
 
 env:
-  REGISTRY_NAME: cr.yandex/crp9ftr22d26age3hulg
-  REGISTRY_NAME2: cr.il.nebius.cloud/crll7us9n6i5j3v4n92m
+  REGISTRY_NAME: csi-s3
   IMAGE_NAME: csi-s3
-  IMAGE_NAME2: yandex-cloud/csi-s3/csi-s3-driver
 
 jobs:
 
@@ -44,5 +42,3 @@ jobs:
         tags: |
           ${{ env.REGISTRY_NAME }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
           ${{ env.REGISTRY_NAME }}/${{ env.IMAGE_NAME }}:latest
-          ${{ env.REGISTRY_NAME }}/${{ env.IMAGE_NAME2 }}:${{ env.VERSION }}
-          ${{ env.REGISTRY_NAME }}/${{ env.IMAGE_NAME2 }}:latest
